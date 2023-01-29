@@ -41,7 +41,7 @@ def use_skill():
         result = arena.player_use_skill()
     else:
         result = arena.battle_result
-    return render_template('fight.html', herose=heroes, result=result)
+    return render_template('fight.html', heroes=heroes, result=result)
 
 
 @app.route("/fight/pass-turn")
